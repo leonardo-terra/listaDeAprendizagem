@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<h1><big>Resumo das idades da nossa família!</big></h1>
+
+<script>
+
+	function pulaLinha(){
+		
+		document.write("<br><hr><br>");
+
+	}
+	function retorna(texto){
+		document.write(texto);
+	}
+	
+
+	var ano=2021;
+	var idadeL=ano-1994;
+	var idadeJ=ano-2000;
+	var idadeA=ano-1965;
+
+retorna("A idade do Leonardo é "+idadeL+ " anos.");
+	pulaLinha();
+retorna("A idade do Junior é "+idadeJ+ " anos.");
+	pulaLinha();
+retorna("A idade da Ana é "+idadeA+ " anos.");
+	pulaLinha();
+retorna("<big>A média das idades de Leonardo, Ana e Júnior é: </big>"+Math.round((idadeL+idadeJ+idadeA)/3));
+
+retorna("<p>oi</p>")
+</script>

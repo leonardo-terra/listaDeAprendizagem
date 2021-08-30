@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+function pulaLinha(){
+	document.write("<br><br>");
+}
+function mostra(frase){
+	document.write(frase);
+	pulaLinha();
+}
+
+function pontuacao(vit,emp,derr){
+
+	let pontos=((vit*3)+(emp*1));
+	return pontos;
+}
+
+
+var vitorias=parseInt(prompt("Quantas vitórias seu time tem?"));
+var empates=prompt("Quantos empates seu time tem?");
+var derrotas=prompt("Quantas derrotas o seu time tem?");
+
+
+var vitoriasP=parseInt(prompt("Quantas vitórias seu time teve ano passado?"));
+var empatesP=prompt("Quantos empates seu time teve ano passado?");
+var derrotasP=prompt("Quantas derrotas o seu time teve ano passado?");
+
+
+numeroDePontos=pontuacao(vitorias,empates,derrotas);
+numeroDePontosPassado=pontuacao(vitoriasP, empatesP, derrotasP);
+
+mostra("O seu time marcou "+numeroDePontos+" pontos nesse campeonato e "+numeroDePontosPassado+" no ano passado");
+
+</script>
